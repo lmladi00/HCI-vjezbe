@@ -1,10 +1,15 @@
+//import; dodavanje komponenti za prikaz na stranici
+
 import React from "react"
+
+import ContactBar from '../components/contactBar'
+
+
+//ContactBar tag (moduralan) se mijenja sa kodom iz foldera u komponentama
 
 const IndexPage = () => (
   <main>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>This is were we will add content</p>
+    <ContactBar /> 
   </main>
 )
 
