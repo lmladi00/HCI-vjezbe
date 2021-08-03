@@ -7,11 +7,11 @@ import ContactBar from '../components/contactBar'
 import NavigationHeader from '../components/NavigationHeader'
 
 //ContactBar tag (moduralan) se mijenja sa kodom iz foldera u komponentama
-
+//logicno Home!!!!!!!!
 const IndexPage = () => (
   <main>
     <ContactBar /> 
-    <NavigationHeader />
+    <NavigationHeader activeTab="Home"/>
   </main>
 )
 

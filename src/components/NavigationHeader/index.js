@@ -7,10 +7,11 @@ import Navigation from '../Navigation'
 
 import * as styles from './style.module.css'
 
-const NavigationHeader = () => (
+const NavigationHeader = (props) => (
   <section className={styles.navigationHeader}>
     <Logo />
-    <Navigation />
+    <Navigation activeTab={props.activeTab}/>
   </section>
 )
 export default NavigationHeader
+//iznad NavigationHeadera je samo pages index pa tamo stavimo activeTab koji je!!!

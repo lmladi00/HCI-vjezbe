@@ -19,7 +19,7 @@ export default NavigationBar
 const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
  //ako je home stavi aktiv ako nije onda bez!
  //bolje if else bolje se vidi, umjesto ternarnog operatora!
-
+/*
 const NavigationBar = () => (
   <nav className={styles.navigationBar}>
     {navTabs.map(tab => {
@@ -34,5 +34,12 @@ const NavigationBar = () => (
     )}
   </nav>
 )
-
+*/
+const NavigationBar = props => (
+  <nav className={styles.navigationBar}>
+    {navTabs.map(tab => <li className={tab===props.activeTab ? styles.active : ''}>
+      {tab}</li>
+    )}
+  </nav>
+)
 export default NavigationBar
